@@ -10,6 +10,8 @@ import Home from "./components/Home";
 import NotFound from "./components/NotFound";
 import Login from "./components/authorization/Login";
 import { logout } from "./service/auth";
+import Festivali from "./components/festivali/Festivali";
+import Create from "./components/festivali/Create";
 
 function App () {
 
@@ -38,6 +40,8 @@ function App () {
                   path="/login"
                   render={() => <Redirect to="/" />}
                 />
+                <Route exact path="/festivali" component={Festivali}/>
+                <Route exact path="/festivali/create" component={Create}/>
                 <Route component={NotFound} />
               </Switch>
             </Container>
