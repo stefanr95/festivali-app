@@ -6,9 +6,9 @@ INSERT INTO korisnik (id, e_mail, korisnicko_ime, lozinka, ime, prezime, uloga)
               VALUES (3,'petar@maildrop.cc','petar','$2y$12$i6/mU4w0HhG8RQRXHjNCa.tG2OwGSVXb0GYUnf8MZUdeadE4voHbC','Petar','Jovic','KORISNIK');
 
               
-INSERT INTO mesto(id, grad, drzava) VALUES(1, 'Novi sad', 'SER');
+INSERT INTO mesto(id, grad, drzava) VALUES(1, 'Novi Sad', 'SER');
 INSERT INTO mesto(id, grad, drzava) VALUES(2, 'Sibenik', 'CRO');
-INSERT INTO mesto(id, grad, drzava) VALUES(3, 'Beograd', 'SRB');
+INSERT INTO mesto(id, grad, drzava) VALUES(3, 'Beograd', 'SER');
 INSERT INTO mesto(id, grad, drzava) VALUES(4, 'Berlin', 'GER');
 INSERT INTO mesto(id, grad, drzava) VALUES(5, 'Boom', 'BEL');
 
