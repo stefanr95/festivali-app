@@ -12,6 +12,7 @@ import Login from "./components/authorization/Login";
 import { logout } from "./service/auth";
 import Festivali from "./components/festivali/Festivali";
 import Create from "./components/festivali/Create";
+import Rezervacija from "./components/festivali/Rezervacija";
 
 function App () {
 
@@ -42,6 +43,7 @@ function App () {
                 />
                 <Route exact path="/festivali" component={Festivali}/>
                 <Route exact path="/festivali/create" component={Create}/>
+                <Route exact path="/festivali/rezervacija/:id" component={Rezervacija}/>
                 <Route component={NotFound} />
               </Switch>
             </Container>

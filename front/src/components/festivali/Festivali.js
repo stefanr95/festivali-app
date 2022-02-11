@@ -93,8 +93,8 @@ const Festivali = (props) => {
     props.history.push("/festivali/create");
   };
 
-  const goToReserve = (id) => {
-    props.history.push("/festivali/reserve/" + id);
+  const goToRezervacija = (id) => {
+    props.history.push("/festivali/rezervacija/" + id);
   };
 
   return (
@@ -195,7 +195,7 @@ const Festivali = (props) => {
                 <td>
                   <Button
                     disabled={festival.brojDostupnihKarata == 0}
-                    onClick={() => goToReserve(festival.id)}
+                    onClick={() => goToRezervacija(festival.id)}
                   >
                     Rezervisi
                   </Button>

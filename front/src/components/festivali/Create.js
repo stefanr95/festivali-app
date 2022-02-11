@@ -32,7 +32,7 @@ const[mestoDTO, setMestoDTO] = useState({});
   
   const selectionChanged = (e) => {
     const value = e.target.value;
-    let mestoDTO = mesta.find((mesta) => mesta.id == value);
+    let mestoDTO = mesta.find((mesta) => mesta.id === value);
 
     console.log(value);
     console.log(mestoDTO);
