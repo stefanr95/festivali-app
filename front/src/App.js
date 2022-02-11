@@ -1,4 +1,4 @@
-import { Container, Nav, Navbar,} from "react-bootstrap";
+import { Container, Nav, Navbar, Button} from "react-bootstrap";
 import {
   HashRouter as Router,
   Switch,
@@ -6,7 +6,10 @@ import {
   Redirect,
   Link,
 } from "react-router-dom";
+import Home from "./components/Home";
+import NotFound from "./components/NotFound";
 import Login from "./components/authorization/Login";
+import { logout } from "./service/auth";
 
 function App () {
 
@@ -18,21 +21,24 @@ function App () {
           <Router>
             <Navbar expand bg="dark" variant="dark">
               <Navbar.Brand as={Link} to="/">
-                JWD
+                Home
               </Navbar.Brand>
               <Nav className="mr-auto">
                 <Nav.Link as={Link} to="/festivali">
                 Festivali
                 </Nav.Link>
-              </Nav>             
+              </Nav> 
+              <Button onClick={() => logout()}>Logout</Button>            
             </Navbar>
             <Container style={{ paddingTop: "10px" }}>
               <Switch>
+              <Route exact path="/" component={Home} />
                 <Route
                   exact
                   path="/login"
                   render={() => <Redirect to="/" />}
                 />
+                <Route component={NotFound} />
               </Switch>
             </Container>
           </Router>
