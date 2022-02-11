@@ -1,6 +1,6 @@
 # festivali-app
 # Spring Boot, React
-# Requirements
+# Requirements:
 npm install
 or
 npm audit fix --force
